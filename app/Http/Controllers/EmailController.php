@@ -11,23 +11,23 @@ class EmailController extends Controller
     {
         // Validasi input
         $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email',
-            'message' => 'required|string'
+            'user_email' => 'required|email',
+            'message' => 'required|string',
         ]);
 
-        $name = $request->input('name');
-        $userEmail = $request->input('email');
-        $messageContent = $request->input('message');
+        // Email tujuan (owner)
+        $ownerEmail = 'davidriochristian43@gmail.com'; // Ganti dengan email owner yang sebenarnya
 
-        // Kirim email
-        Mail::raw($messageContent, function ($message) use ($name, $userEmail) {
-            $message->to('davidriochristian43@gmail.com') // Penerima email
-                    ->from($userEmail, $name) // Nama dan email dari input user
-                    ->subject('New Message from ' . $name);
+        // Mengirim email ke owner
+        Mail::send([], [], function ($message) use ($request, $ownerEmail) {
+            $message->to($ownerEmail)
+                    ->from(config('mail.from.address'), config('mail.from.name')) // Menggunakan konfigurasi dari file config
+                    ->replyTo($request->user_email) // Mengatur Reply-To ke email input pengguna
+                    ->subject('Message from Website Visitor')
+                    ->html('<p>' . nl2br(e($request->message)) . '</p>'); // Menggunakan metode html() untuk set konten email
         });
 
-        return back()->with('success', 'Email has been sent successfully!');
+        return redirect()->back()->with('success', 'Message sent successfully!');
     }
 }
 

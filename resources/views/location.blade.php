@@ -1,5 +1,35 @@
 <x-layout>
 <x-slot:title>{{ $title }}</x-slot:title>
+<div class="container">
+    <div id="map" style="height: 500px; width: 100%; border-radius: 15px;"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVDXXrXe5D9zvovTsNHFFi9MlCCaF4Yds"></script>
+    <script>
+        function initMap() {
+            // Koordinat lokasi
+            var location = {lat: -7.770838398222869,  lng: 110.41401892236044}; // Ganti dengan koordinat yang diinginkan
+            
+            // Membuat peta
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+
+            // Menambahkan marker
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'Lokasi Kami!'
+            });
+        }
+
+        // Memanggil fungsi initMap setelah halaman dimuat
+        window.onload = initMap;
+    </script>
+</div>
+
+<hr class="featurette-divider">
+
     <div class="container">
     <div class="row">
         <div class="col-md-4 mb-4">
