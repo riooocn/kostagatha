@@ -1,6 +1,6 @@
 <x-layout>
 <x-slot:title>{{ $title }}</x-slot:title>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="carouselExampleCaptions" class="carousel slide fade-in" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -9,7 +9,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
             <img src="./assets/images/luar.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block animate__animated animate__slideInUp">
                 <h1>Kos Omah Agatha</h1>
                 <p>Kos pilihan di area Babarsari.</p>
             </div>
@@ -43,7 +43,7 @@
 
         <div class="container">
             <!-- Featurettes -->
-            <div class="row featurette" style="background-image:url('./assets/images/kamar2.jpeg');
+            <div class="row featurette animate-on-scroll" style="background-image:url('./assets/images/kamar2.jpeg');
                         background-size: cover; background-position: center; padding: 20px; border-radius: 8px:">
                 <div class="col-md-7 offset-md-5" style="background-color: rgba(0, 0, 0, 0.6); padding: 10px 20px;
                             border-radius: 12px; color: white; display: flex; align-items: center;">
@@ -67,7 +67,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette" style="background-image: url('./assets/images/lorong2.jpeg');
+            <div class="row featurette fade-in" style="background-image: url('./assets/images/lorong2.jpeg');
                         background-size: cover; background-position: center; padding: 20px; padding-top: 10; border-radius: 8px;">
                 <div class="col-md-7" style="background-color: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 12px; color: white;">
                     <h2 class="featurette-heading fw-normal">
