@@ -44,20 +44,73 @@ body {
 /* CAROUSEL
   -------------------------------------------------- */
 
-.carousel {
-  margin-bottom: 4rem;
-}
+  .carousel {
+    margin-bottom: 4rem;
+  }
 
-.carousel-item {
-  height: 40rem;
-}
+  .carousel-item {
+      height: 40rem;
+  }
 
-.carousel-img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+  .carousel-img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+  }
 
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .carousel-item {
+          height: 20rem;
+      }
+
+      .carousel-caption {
+          font-size: 0.8rem;
+          bottom: 10%;
+      }
+
+      .carousel-caption h1 {
+          font-size: 1.2rem;
+      }
+
+      .carousel-caption p {
+          font-size: 0.9rem;
+      }
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+      .carousel-item {
+          height: 30rem;
+      }
+
+      .carousel-caption {
+          font-size: 1rem;
+          bottom: 15%;
+      }
+
+      .carousel-caption h1 {
+          font-size: 1.5rem;
+      }
+
+      .carousel-caption p {
+          font-size: 1rem;
+      }
+  }
+
+  @media (min-width: 993px) {
+      .carousel-caption {
+          font-size: 1.2rem;
+          bottom: 20%;
+      }
+
+      .carousel-caption h1 {
+          font-size: 2rem;
+      }
+
+      .carousel-caption p {
+          font-size: 1.2rem;
+      }
+  }
 
 /* FEATURETTES
   ------------------------- */
@@ -117,4 +170,27 @@ footer .fas, footer .fab {
 
 footer .fas:hover, footer .fab:hover {
   transform: scale(1.2);
+}
+
+/* BUTTON CSS
+  -------------------------------------------------- */
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Warna dasar biru */
+  color: #fff; /* Warna teks putih */
+  border: none;
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Efek transisi saat hover */
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap saat di-hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat di-hover */
+  text-decoration: none; /* Pastikan tidak ada garis bawah */
+  color: #fff; /* Warna teks putih */
 }

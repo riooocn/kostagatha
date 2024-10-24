@@ -33,7 +33,7 @@
     <style>
         main {
             font-family: 'Poppins', sans-serif;
-            background-image: url('./assets/images/cok.jpg'); /* Gambar lokal */
+            background-image: url('./assets/images/background-home.jpeg'); /* Gambar lokal */
             background-size: cover; /* Mengatur gambar agar menutupi seluruh background */
             background-position: center; /* Memusatkan gambar di halaman */
             background-repeat: no-repeat; /* Agar gambar tidak diulang */
@@ -54,6 +54,70 @@
             animation: fadeIn 2s ease-in;
         }
 
+        #offers {
+    min-height: 60vh;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer-image {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Styling untuk konten */
+.offers-content {
+    padding: 20px;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn {
+    border-color: #333 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .offer-image {
+        max-width: 100%;
+    }
+
+    .offers-content {
+        padding-top: 20px;
+    }
+
+    .offers-content h2 {
+        font-size: 40px;
+    }
+
+    .offers-content span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offers-content h2 {
+        font-size: 32px;
+    }
+
+    .offers-content span {
+        font-size: 18px;
+    }
+}
         
     </style>
     

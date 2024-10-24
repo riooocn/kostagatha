@@ -44,7 +44,7 @@
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-envelope fs-5"></i>
-                            <span>omahagathao@gmail.com</span>
+                            <span>omahagatha@gmail.com</span>
                         </div>
                     </div>
 

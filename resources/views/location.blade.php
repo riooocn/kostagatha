@@ -28,41 +28,50 @@
     </script>
 </div>
 
-<hr class="featurette-divider">
+<hr class="featurette-divider" style="border-color: white;">
+
+<h1 class = "text-white">Public Places</h1>
 
     <div class="container">
     <div class="row">
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-lg" style="border-radius: 15px; overflow: hidden;">
+        <div class="card h-100 shadow-lg bg-dark text-white" style="border-radius: 15px; overflow: hidden;">
             <img src="./assets/images/jwalk2.jpg" class="card-img-top" alt="Jwalk" style="height: 200px; object-fit: cover;">
             <div class="card-body">
-            <h5 class="card-title">Jwalk Mall</h5>
-            <p class="card-text">Tempat belanja populer dengan suasana modern dan fasilitas lengkap. Cocok untuk bersantai dan berbelanja.</p>
+                <h5 class="card-title">Jwalk Mall</h5>
+                 <p class="card-text">Tempat belanja populer dengan suasana modern dan fasilitas lengkap. Cocok untuk bersantai dan berbelanja.</p>
             </div>
         </div>
         </div>
+
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-            <img src="./assets/images/atma2.jpg" class="card-img-top" alt="Atma" style="height: 200px; object-fit: cover;">
-            <div class="card-body">
-            <h5 class="card-title">Atma Jaya</h5>
-            <p class="card-text">Universitas terkemuka dengan berbagai program studi unggulan dan fasilitas pembelajaran terbaik.</p>
+            <div class="card h-100 shadow-lg bg-dark text-white" style="border-radius: 15px; overflow: hidden;">
+                <img src="./assets/images/atma2.jpg" class="card-img-top" alt="Atma" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Atma Jaya</h5>
+                    <p class="card-text">Universitas terkemuka dengan berbagai program studi unggulan dan fasilitas pembelajaran terbaik.</p>
+                </div>
             </div>
         </div>
-        </div>
+
         <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-            <img src="./assets/images/indomaret.jpeg" class="card-img-top" alt="Indomaret" style="height: 200px; object-fit: cover;">
-            <div class="card-body">
-            <h5 class="card-title">Indomaret</h5>
-            <p class="card-text">Minimarket dengan kebutuhan harian terlengkap dan pelayanan cepat.</p>
+            <div class="card h-100 shadow-lg bg-dark text-white" style="border-radius: 15px; overflow: hidden;">
+                <img src="./assets/images/indomaret.jpeg" class="card-img-top" alt="Indomaret" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Indomaret</h5>
+                    <p class="card-text">Minimarket dengan kebutuhan harian terlengkap dan pelayanan cepat.</p>
+                </div>
             </div>
         </div>
-        </div>
+
     </div>
     </div>
 
 
-    <hr class="featurette-divider">
+    <!-- Footer -->
+    <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between
+            align-items-center py-3 my-4 border-top">
+        </div>
 
 </x-layout>

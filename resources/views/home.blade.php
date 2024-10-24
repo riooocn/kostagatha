@@ -1,45 +1,61 @@
 <x-layout>
 <x-slot:title>{{ $title }}</x-slot:title>
-    <div id="carouselExampleCaptions" class="carousel slide fade-in" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <section id="offers" class="py-5">
+            <div class="container">
+                <div class="row d-flex flex-column align-items-center text-center">
+                    <!-- Gambar ditempatkan di dalam elemen terpisah -->
+                    <div class="image-container">
+                        <img src="/assets/images/logo.jpeg" alt="Logo" class="img-fluid offer-image">
+                    </div>
+                    <div class="offers-content mt-3">
+                        <span class="text-white">Welcome to Our ite!</span>
+                        <h2 class="mt-2 mb-4 text-white">Omah Agatha Yogyakarta</h2>
+                        <a href="/location" class="custom-btn">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="carouselExampleCaptions" class="carousel slide fade-in py-5" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/luar.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-block animate__animated animate__slideInUp">
+                        <h1>Kos Omah Agatha</h1>
+                        <p>Kos pilihan di area Babarsari.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/dapur2.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h1>Nikmati dapur serbaguna</h1>
+                        <p>Tersedia dapur serta alat memasak lainnya.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/yadara.jpeg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-block">
+                        <h1>Jelajahi Sekitar</h1>
+                        <p>Dekat dengan berbagai fasilitas publik seperti ATM, Mall, Kampus, dan Supermarket.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="./assets/images/luar.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block animate__animated animate__slideInUp">
-                <h1>Kos Omah Agatha</h1>
-                <p>Kos pilihan di area Babarsari.</p>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="./assets/images/dapur2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Nikmati dapur serbaguna</h1>
-                <p>Tersedia dapur serta alat memasak lainnya.</p>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="./assets/images/yadara.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Jelajahi Sekitar</h1>
-                <p>Dekat dengan berbagai fasilitas publik seperti ATM, Mall, Kampus, dan Supermarket.</p>
-            </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <hr class="featurette-divider">
+        <hr class="featurette-divider" style="border-color: white;">
 
         <div class="container">
             <!-- Featurettes -->
@@ -65,7 +81,7 @@
             </div>
         </div>
 
-            <hr class="featurette-divider">
+            <hr class="featurette-divider" style="border-color: white;">
 
             <div class="row featurette fade-in" style="background-image: url('./assets/images/lorong2.jpeg');
                         background-size: cover; background-position: center; padding: 20px; padding-top: 10; border-radius: 8px;">
@@ -81,7 +97,7 @@
                 </div>
             </div>
 
-            <hr class="featurette-divider">
+            <hr class="featurette-divider" style="border-color: white;">
 
             <div class="jumbotron jumbotron-fluid" style="background-image: url('./assets/images/luar.jpeg'); background-size: cover; background-position: center; color: white;">
                 <div class="container">
@@ -91,7 +107,7 @@
                         Harga terjangkau, keamanan 24 jam, dan layanan terbaik untuk kenyamanan Anda.</p>
                     <hr class="my-4">
                     <p>Ayo, pesan sekarang dan rasakan kenyamanan seperti di rumah sendiri!</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a>
+                    <a class="btn btn-primary btn-lg" href="/contact" role="button">Contact Us</a>
                 </div>
             </div>
 

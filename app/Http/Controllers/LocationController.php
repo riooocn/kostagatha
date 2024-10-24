@@ -8,6 +8,6 @@ class LocationController extends Controller
 {
     public function showLocation()
     {
-        return view('location', ['title'=>'Location']);
+        return view('location', ['title'=>'Visit Us']);
     }
 }
