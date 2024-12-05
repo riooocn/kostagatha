@@ -1,3 +1,4 @@
+
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
     <div class="container d-flex justify-content-center align-items-center" style="height: 50vh;">
@@ -9,6 +10,12 @@
                     {{ session('success') }}
                 </div>
             @endif
+
+            <!-- Informasi Kamar yang Tersedia -->
+            <div class="mb-4 text-center">
+                <h4>Kamar yang Tersedia</h4>
+                <p>Terdapat {{ 8 }} kamar kos yang siap untuk disewa.</p>
+            </div>
 
             <form action="{{ route('send.email') }}" method="POST">
                 @csrf
